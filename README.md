@@ -8,13 +8,13 @@ Raspberry Pi 카메라 모듈에서 실시간 JPEG 이미지를 Java 기반 GUI�
 
 ## 시스템 구조
 
-
+```text
 [ Python 서버 ]
   |
   | (Socket, JPEG Byte Stream)
   |
 [ Java GUI 클라이언트 ]
-
+```
 
 - Python: Dummy JPEG 생성 → TCP 전송 (10 FPS)
 - Java: Socket 수신 → BufferedImage 변환 → JLabel에 표시
